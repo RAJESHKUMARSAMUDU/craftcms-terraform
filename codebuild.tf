@@ -25,7 +25,7 @@ resource "aws_codebuild_project" "craft-cms" {
     }
 
     environment_variable {
-      name  = "IMAGE_REPO_NAME_NGINX"
+      name  = "IMAGE_REPO_NAME_CRAFTCMS"
       value = "craftcms-terraform"
     }
 
