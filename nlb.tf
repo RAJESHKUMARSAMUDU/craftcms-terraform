@@ -2,7 +2,7 @@ resource "aws_lb" "craftcms-nlb" {
   name               = "craftcms-nlb"
   internal           = false
   load_balancer_type = "network"
-  subnets            = [aws_subnet.public-subnet-1.id, aws_subnet.public-subnet-2.id, aws_subnet.public-subnet-2.id]
+  subnets            = [aws_subnet.public-subnet-1.id, aws_subnet.public-subnet-2.id, aws_subnet.public-subnet-2.id, aws_subnet.public-subnet-3.id]
   ip_address_type    = "ipv4"
   tags = {
     Name = "craftcms-nlb"
