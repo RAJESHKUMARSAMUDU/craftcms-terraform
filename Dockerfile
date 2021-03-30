@@ -19,7 +19,8 @@ RUN curl -sS https://getcomposer.org/installer | php && \
 WORKDIR /var/www/craftcms
 	
 RUN composer create-project craftcms/craft /var/www/craftcms && \
-    chown -R apache:apache * 
+    chown -R apache:apache * && \
+    chown -R apache:apache .*
 
 COPY craft.conf /etc/httpd/conf.d
 COPY httpd.conf /etc/httpd/conf
