@@ -1,5 +1,5 @@
 FROM centos:8
-LABEL MAINTAINER="Riccardo De Leo <r@rdeleo.com>"
+LABEL MAINTAINER="Rajesh.S"
 
 # Upgrade and install base packages
 RUN yum update -y \
